@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+#menu{
+    display: inline-block;
+    height: 625px;
+    width: 15%;
+    background-color:rgb(36, 36, 36);
+}
+.items{
+    color: white;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 0.5px solid rgb(151, 151, 151);
+    font-size:1.5rem;
+}
+.item,.subitem{
+    border-radius: 5px;
+}
+.item:hover,.subitem:hover{
+    background-color: rgb(152, 70, 230);
+}
+a{
+    color: white;
+    display:block;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#menu>li:first-of-type,.submenu>li:first-of-type{
+    border-top-left-radius:0px;
+    border-top-right-radius:0px;
+}
+.submenu{
+    display:none;
+    top: 100%;
+    background-color: rgb(36, 36, 36);
+    width: 100%;
+    
+}
+.item:hover>.submenu,.subitem:hover>.submenu{
+	display:block;
+}
+
+.submenu .subitem{
+    border-radius:5px ;
+}
+
+.submenu> li:last-of-type{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius:0px;
+}
+a.sign::after{
+	content:"\0020DB";
+	float: right;
+    margin-right: 13px;
+}
